@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Office</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background: #f9f9f9; 
+    color: #333;
+  }
+  header, footer {
+    background: #732282; 
+    color: #ffffff; 
+    padding: 1em; 
+    text-align: center;
+  }
+  main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  h1, h2 {
+    margin: 0.5em 0;
+  }
+  p {
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Home Office</h1>
+</header>
+
+<main>
+  <h2>Welcome to the Home Office</h2>
+  <p>
+    This is a simple placeholder copy of the Home Office website. 
+    Feel free to explore and interact with our embedded chatbot below.
+  </p>
+</main>
+
+<footer>
+  <p>© 2024 Home Office. All rights reserved.</p>
+</footer>
+
+<!-- Voiceflow Chatbot Code -->
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67597d37b04c203ca478d1f0' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+      v.type = "text/javascript"; 
+      s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+
+</body>
+</html>
